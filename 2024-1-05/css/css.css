@@ -1,0 +1,34 @@
+.box{
+    width: 300px;
+    height:300px;
+    border:1px solid red;
+     background-color:rgb(127,255,212,0.7);
+     /* opacity:50;  전체투명도*/
+
+    background-image:url("../css/imgs/KakaoTalk_20240105_101347798.png");
+    background-repeat:no-repeat;
+    /* repeat, no-repeat, repeat-x, repeat-y, inherit 리피트는 반복 x축y축 no는한번*/ 
+    background-position: left top; /* 순서 = left top 좌 상단 x축쓰고 y축 써줌 */
+    background-attachment: scroll; /* scroll(기본값), fixed(전체 페이지 고정), local(특정지역내 고정), inherit */
+
+
+    /* background: rgba(127,255,212,0.4) url("../imags/images.png") no-repeat center local;
+    background-size: 50%; /* 이미지 사진크기는 별도 */
+    overflow-y:auto;  */
+    
+    /* scroll, auto */
+    /* overflow, overflow-x, overflow-y */
+.box2{
+    width:100px;
+    height:100px;
+    border:3px solid black;
+
+}
+
+
+
+
+
+
+
+/* background:rgb(150, 255, 212,) url("../css/imgs/KakaoTalk_20240105_101347798.png") no-repeat ceter fixed; */

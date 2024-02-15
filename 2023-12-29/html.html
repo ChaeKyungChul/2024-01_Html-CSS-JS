@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ const uName = prompt("이름","");
+ const foodexpenses =prompt("식비");
+ const drink = prompt("음료");
+ const transportation =prompt("교통비");
+
+
+ const normal = (foodexpenses + drink + transportation);
+ let result = normal >= +10000 && normal <= -10000;
+ result = result ? "초과" : "돈관리를 잘했어요!";
+ document.write(uName + 님은 + result);
+
+
+    
+    
+</script>
+</body>
+</html>

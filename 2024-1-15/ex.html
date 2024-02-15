@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    /* 
+        transform
+	    translate(x, y) -> translateX(),  .... 이동 px or % 사용
+	    rotate(x, y, z) -> rotateX(), ... 회전
+	    scale(x, y) -> scaleX(), ... 크기 1.5(1.5배)
+	    skew(x, y) -> skewX(), ... 각도
+	    matrix() : 위에 4개 전체 합침  matrix(크기X, 각도Y, 크기y, 이동x, 이동y);
+    */
+
+    /*
+        transition
+        transition-delay - 언제부터 시작 할 것인가?
+        transition-duration - 어느 시간동안 진행할 것인가?
+        transition-property - 무엇을 애니메이션 할 것인가? 
+        transition-timing-function - 시간차
+    */
+
+        div{
+            width:100px;
+            height:100px;
+            background-color: red;
+            /* left: clas(50% - 50px); */
+            margin:30px;
+            /*
+            transition-property: transform;  all, none, inherit 
+            transition-duration: 0.5s;
+            transition-delay: 0.5s;
+            */
+            transition: all 1s 0.5s;
+        }
+        .box1{
+            top:100px;            
+            left:50%;
+            transform:translateX(-50%);
+            position:absolute;
+        }
+        .box2:hover{
+            transform: rotate(30deg);
+        }
+        .box3:hover{
+            transform: skew(30deg, 20deg);
+        }
+        .box4:hover{
+            transform: scaleX(1.5);
+        }
+        .box5:hover{
+            transform: matrix(1, -0.3, 0, 1.2, 0, 0);
+        }
+        .btn1{
+        width:150px;
+        height:50px;
+        font-size:18px;
+        padding:5px 25px;
+        box-shadow: 2px 2px 0px 0px #efefef;
+        border-radius:10px;
+        cursor:pointer;
+        background-image:linear-gradient(to bottom, #3bbeee 5%, #0183b3 100%);
+        color:#fff;
+        border:none;
+        font-weight:bold;
+        transition: all 0.3s;
+        }
+
+        .btn1:hover{
+            background-image:linear-gradient(to bottom, #0183b3 5%, #3bbeee 100%);        }
+        .btn1:active{
+            transform:translate(2px , 2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <button class="btn1">click</button>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1. 임의의 양의 정수 세개가 마지막 숫자가 같은지 확인하시오.
+
+예) 10, 20, 30  ==> true  11, 10, 20 ==> false -->
+
+<script>
+ function last_digit(x, y, z){
+    if(x > 0 && y > 0 && z >0){
+        return x % 10 == y % 10 && y % 10 == z % 10 && z % 10 == x % 10;
+    }else{
+        return false;
+     }
+    } 
+    console.log(last_digit(11, 21, -19));
+    console.log(last_digit(13, 23, 22));
+    console.log(last_digit(13, 23, 23));
+
+
+
+//2. 임의의 영문자를 받아 처음 세자를 소문자로 바꾸시오. 단 문자열의 길이가 3보다 작으면 모두 대문자로 변환합니다.
+
+function front_lower(str){
+    if(str.length < 3){
+        return str.toUpperCase();
+    }  
+    //앞에 세자를 잘라 대문자로 뱌꿈
+    const f_str = (str.substring(0, 3)).toLowerCase();
+    const b_str = str.substring(3, str.length);
+    return f_str + b_str;
+}
+console.log(front_lower("ab"));
+console.log(front_lower("JAVASCRIPT"));
+
+ 
+
+//3. 두 수의 합이 50~80범위 안에 있으면 65를 반환하고 그렇지 않으면 80을 반환하시오.
+function sortSum(x, y){
+    const sumNum = x + y;
+    if(sumNum >= 50 && sumNum <= 80){
+        return 65;
+    }else{
+        return 80;
+    }
+}
+ console.log(sortSum(30, 20));
+ console.log(sortSum(90, 80));
+ 
+//4. 임의의 문자열을 받아 문자열을 거꾸로 출력하시오.   //예) welcome ==> emoclew
+//1. Array reverse 씀  배열을 뒤집음 근대이건 문자임 ㅡ> 문자을 배열로바꿈
+//1. "wel come" split(" ") ==> ["wel", "come"]
+//2. "welcome".split("") ==? ["w", "e", "l", "c", "o", "m", "e"]
+//3. reverse()
+//4. join()
+ 
+const str_reverse = (str) => {
+            return str.split("").reverse().join(""); 
+        }
+        console.log(str_reverse("javascript"))
+        console.log(str_reverse("홍길동 바보"))
+ 
+
+//5. 임의의 문자열을 받으면 그 단어의 첫 글자를 대문자로 바꾸어 출력하시오.
+
+ 
+
+//6. 주어진 숫자를 시간과 분으로 변환하는 스크립트를 작성하시오.
+
+ 
+
+//7. 주어진 문자열의 문자를 알파벳순으로 변환하는 스크립트를 작성하시오.
+
+   //예) Python ==> Phnoty
+
+ 
+
+//8. 주어진 문자열의 첫번째 문자와 마지막 문자를 빼고 출력하시오.
+
+ 
+
+//9.두개의 문자를 받아 각 문자의 첫번째 문자를 제거한 후 두 문자를 연결하시오.
+
+ // 예) PHP, JS ==> HPS
+
+ 
+
+//10. 문자열이 "Los", 나 "New"로 시작하면 문자를 표시하고 그렇지 않으면 공백을 반환하시오.
+
+   //  단, Los, New는 대소문자를 무시합니다. 
+    </script>
+</body>
+</html>
+
+

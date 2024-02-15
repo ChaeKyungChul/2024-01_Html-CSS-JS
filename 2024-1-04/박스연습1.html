@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- /* 1번  외곽선 검정색 5px 실선
+2. 바탕색 옅은 연두색  오른쪽 상단 왼쪽 하단 모서리 10px 둥글게 한후 외곽선을 파랑색2px 점선(dash) 로 만드시오
+3번 하나의 국가박스에 외각선 4곳의 색상을 모두 다르게하시오
+4번 하나의  국가박스에 외ㅏ각선 2곳의 두께와 색상을 다르게하시오 */ -->
+    <style>
+        .box1{
+            border:5px solid black;
+        }
+        .box2{
+            background-color:rgb(30, 203, 88);
+            border-top-right-radius:10px;
+            border-bottom-left-radius:10px;
+            border: 2px dashed blue;
+        }
+        .box3{
+            border-color:green blue pink purple;
+            border-width:3px;
+            border-style:solid;
+        }
+        .box4{
+            border-color:green blue ;
+            border-width: 1px 5px;
+            border-style:solid;
+            
+        }
+    </style>
+</head>
+<body>
+    <p class="box1">하나의국가</p>
+    <p class="box2">하나의국가</p>
+    <p class="box3">하나의국가</p>
+    <p class="box4">하나의국가</p>
+</body>
+</html>

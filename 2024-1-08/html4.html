@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border*box;}
+        .container{
+            margin:50px auto;
+            padding:40px;
+            width:500px;
+            height:500px;
+            border:1px solid #333;
+            position: relative;
+        }
+        .container div{
+            width:150px;
+            height: 150px;
+            margin-top:10px;
+        }
+        .box1{
+            background-color: antiquewhite;
+            position: absolute;
+            top : 0;
+            left :0;
+            z-index:3;
+
+        }
+        .box2{
+            background-color: aquamarine;
+            position:absolute;
+            top : 50px;
+            left: 50px;
+            z-index: 1;
+
+        }
+        .box3{
+            background-color: blueviolet;
+            position: absolute;
+            top:100px;
+            left:100px;
+        }
+.sm{
+    height: 1000px;
+}
+.top{
+    right: 100px;
+    background-color: azure;
+    border:1px solid black;
+    position:fixde;
+    
+    bottom:10px;
+
+}
+    </style>
+
+</head>
+<body>
+    <div class="container">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</div>
+<dvi class="container"></dvi>
+<div class="sm"></div>
+
+<a href="#" class="top">탑이다</a>
+</dvi>
+</body>
+</html>

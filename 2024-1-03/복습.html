@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let site = prompt("네이버.구글.야후.다음 중 이용하는것?","0");
+let url;
+
+switch(site){
+    case"네이버":
+    url = "www.naver.com";
+    break;
+    case"구글":
+    url = "www.google.com";
+    break;
+    case"야후":
+    url ="www.yahoo.co.kr";
+    break;
+    case"다음":
+    url = "www.daum.com";
+    break;
+    default:
+        alret("보기중에없습니다.")
+}
+
+if(url) location.href="http://"+url;
+    </script>
+
+<script>
+     alert("어서오세요");
+     let num = prompt("당신이좋아하는 숫자는?.","0");
+
+     if(num % 2 == 0 ){
+     document.write("당신이좋아하는 숫자는 짝수")
+    }else{
+        documet.write("당신이 좋아하는 숫자는 홀수")};
+</script>
+
+
+
+</body>
+</html>

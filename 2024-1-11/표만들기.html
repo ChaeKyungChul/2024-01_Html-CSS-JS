@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판테이블연습</title>
+<style>
+    
+table{
+    
+    margin: 30px auto;
+    width : 800px; 
+    border-collapse:collapse ;     /*표 실선겹침 2줄*/
+ 
+}
+table,th,td{
+    border:1px solid;
+}
+ th{
+    height: 80px;
+    text-align: right;  /*글씨오른쪽*/
+    vertical-align: bottom;   /*글씨아래*/
+ }
+ tbody tr:hover{                    /*tbody 제목x 색.  tr만하면 제목도*/
+    background: forestgreen;
+    
+ }
+
+</style>
+</head>
+<table>
+    <caption>나의 게시판</caption>
+    <colgroup>
+        <col width="5%">
+        <col>
+        <col width="15%">
+        <col width="10%">
+        <col width="10%">
+    </colgroup>
+   <thead>
+    <tr>
+        <th >1번호</th>
+        <th>제목0</th>
+        <th >글쓴이</th>
+        <th >글쓴날짜</th>
+        <th>조회수</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+        <td>*5</td>
+        <td>제목입니다</td>
+        <td>안철수</td>
+        <td>2024.01.11</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>*5</td>
+        <td>제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다제목입니다</td>
+        <td>안철수</td>
+        <td>2024.01.11</td>
+        <td>1</td>
+    </tr>
+
+   </tbody> 
+</table>
+
+<body>
+    
+</body>
+</html>

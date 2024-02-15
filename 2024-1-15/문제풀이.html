@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            /*const a = Math.floor(Math.random()*11);
+            if(a <= 5) {
+                document.wrtie("정답");
+            } else {
+                document.wrtie("오답");
+            }
+            prompt("숫자를 입력하세요");
+            documen*/
+
+            let filename1 = "test.png"
+            let filename2 = "document.xlsx"
+
+            let lastIndex = filename1.lastIndexOf('.')  // 4
+
+            let onlyname = filename1.substr(0,lastIndex)
+            let onlyextention = filename1.substr(lastIndex)
+
+            console.log("onlyname: ", onlyname)
+            console.log("onlyextention: ", onlyextention)
+
+            /* function popup(){
+            var url = "popup.html";
+            var name = "popup test";
+            var option = "width = 500, height = 500, top = 100, left = 200, location = no"
+            window.open(url, name, option); 
+        } */
+     </script>
+  <!--<a href = "javascript:popup()" target = "_blank">팝업</a> -->
+</body>
+</html>

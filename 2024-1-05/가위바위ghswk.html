@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>가위바위보</title>
+<style>
+    .container{
+        width:600px;
+        margin:40px auto;
+        text-align:center;
+    }
+    .game{
+        display:inline-block;
+        width:200px;
+        height:200px;
+        margin: 10px 30px;
+        border:3px solid
+    }
+    .const dictionary
+</style>
+</head>
+<body>
+    
+    <div class="container">
+        <h3>그러면 게임을 시작해 보자구!</h3>
+        <p id="result">이겼습니다.</p>
+
+
+        
+        <div class="game"><strong>나</strong><br><span id="me">가위</span></div>
+        <div class="game"><strong>컴퓨터</strong><br><span id="com">보</span></div>
+        <br />
+
+        <button id="rock" class="btn">가위</button>
+        <button id="scissor" class="btn">바위</button>
+        <button id="paper" class="btn">보</button>
+        <button id="init">초기화</button>
+    
+
+    </div>
+
+<script>
+let comPick=(0, 1, 2)
+function comPick(comPick){
+    return Object.entries(dictionary);
+}
+const result = document.getElementById(`result`);
+const init = document.getElementById(`init`);
+
+
+let playTime = 0;
+let winNumber = 0;
+let loseNumber = 0;
+let drawNumber = 0;
+
+        const myPick =this.textContent;
+       
+        if(scoreGap === 0){
+            alet('비겼다 !');
+            drawNumber++;
+        } else if([-1, 2].includes(scoreGap)){
+            alert('이겼다 !');
+            winNumer++;
+        } else{
+            alert('졌다 !');
+        }
+        result.innerHTML = winNuber + "승" + loseNumber + "패" + drawNumber + "무"  ;
+    
+
+
+
+
+
+
+</script>
+
+
+  
+
+
+</body>
+</html>

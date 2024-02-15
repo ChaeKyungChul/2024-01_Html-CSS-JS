@@ -1,0 +1,46 @@
+*{box-sizing: border-box;}
+.container{
+    width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.box1{
+    width: 220px;
+    height: 220px;
+    background-color:#ff0000;
+    float: left;
+    padding-top : 70px;
+    padding-left: 50px;
+    font-size: 50px;
+}
+.box2{
+    width: 220px;
+    height: 220px;
+    background-color: #1400ff;
+    border-radius: 50%;
+    float: left;
+    padding-top : 70px;
+    padding-left: 40px;
+    margin-left: 50px;
+    font-size: 50px;
+    color: aliceblue;
+    
+}
+.box3{
+    width: 220px;
+    height: 220px;
+    background:url(../imgs/Faker.jpg);
+    float:left;
+    padding:90px;
+    margin-left: 50px;
+}
+.box4{
+    width: 220px;
+    height:220px;
+    background:url(../imgs/coding2.jpg);
+    float: left;
+    padding:100px;
+    margin-left : 50px;
+    border-radius: 50%;
+}
+

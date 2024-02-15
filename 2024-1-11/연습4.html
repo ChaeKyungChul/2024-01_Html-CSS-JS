@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 5000px;
+            background: gray;
+        }
+        .popup{
+            position:fixed;   /*fixed 고정시키는것*/
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            background: antiquewhite;
+            top:200px;
+            left :calc(50% - 150px);
+        }
+        .box2{
+            background-color: aqua;
+            height:400px;
+            width:max(50%, 300px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+      <div class="box2"></div>
+
+    <div class="popup">
+        팝업창입니다.
+    </div>
+</div>
+    
+</body>
+</html>

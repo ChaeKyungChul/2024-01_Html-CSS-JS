@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            position: relative;
+            animation-name: sample;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-direction: alternate-reverse;
+            animation-timing-function:  ease-in; 
+            animation-fill-mode: forwards;
+            /*애니메이션 시작부분, 끝 부분 에 어떤 스타일 적용할지 fill-mode*/
+            /* ease가 기본값 (빠르게시작하고 천천히끝남)
+                linear - 처음부터 끝까지 일정한속도*/
+                ease-in 느린시작
+                ease-out 느린끝
+                ease-in-out 느린시작 느린끝
+                cubic-bezier (n,n,n,n) ;
+            /* alternate - 정상재생 , 역방향 재생 
+                alternate - 역방향, 정상재생*/
+
+            /*none - 기본값 (애니메이션과 상과없이 stylesheet에 만든 값으로 적용)
+                forwards - 마지막 키프레임에 설정된 값으로 유지됨
+                backwards - 첫 번째 키 프레임에 설정된 값을 가져오나 애니메이션 지연이 까지만유지됨
+                both - 앞뒤 모두에 규칙을 따름.
+
+                */
+        }
+        @keyframes sample {
+            0% {
+                background-color:yellowgreen;
+                left : 0px;
+                top : 0px;
+            }
+            25% {
+                background-color: rgb(48, 172, 32);
+                left: 200px;
+                top : 0px;
+                
+            }
+        
+            50% {background-color: rgb(92, 75, 75);
+                left: 200px;
+                top : 300px;
+            }
+                
+            75% {
+                background-color: rgb(126, 79, 79);
+                left: 0px;
+                top :300px;
+                }
+                
+             100%
+                {
+                background-color: red;
+                left: 0px;
+                top :0px;
+                }
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>애니매이니션</h1>   
+<div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+            text-transform: capitalize;     /*모든첫글짜 대문자*/
+     
+    </style>
+</head>
+<body>
+    <p id="strname"></p>
+    
+    <script>
+        //5. 임의의 문자열을 받으면 그 단어의 첫 글자를 대문자로 바꾸어 출력하시오.     ㅡ>   asdad   asdasd   asdasd asdasdasd 문자열
+        // ast.split(""); ==>array = ["a", "s", "t"] => array[0].toUpperCase();
+
+        function capital_str(str){
+            str = str.split(" ");
+            for(let i = 0;  i <str.length; i++){
+                str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+        }
+
+
+        return str.join(" ");
+    }
+    document.getElementById("strname").innerHTML = capital_str("To reverse the elements in an array without mutating the original array us")
+
+
+    //6. 주어진 숫자를 시간과 분으로 변환하는 스크립트를 작성하시오.
+    // 450 -->
+    
+     function time_conv(num) {
+        const hours = Math.floor(num / 60);
+        const minutes =  num % 60;
+        return hours + "시간 " + minutes + "분";
+     } 
+     console.log(time_conv(450));
+     console.log(time_conv(550));
+     console.log(time_conv(370));
+
+
+     ////7. 주어진 문자열의 문자를 알파벳순으로 변환하는 스크립트를 작성하시오. //예) Python ==> Phnoty
+     //sort() .배열 1234 abcd ㄱㄴㄷㄹ
+     //1. 문자열을 배열로 바꾼다. split("").sort().join("")
+     function alphabet_sort(str){
+        return str.split("").sort().join("");
+     }
+     console.log(alphabet_sort("cabcd4d"));
+     console.log(alphabet_sort("bbbbbbbbaaaacabcd4d"));
+     console.log(alphabet_sort("cccccccccbbbbbbbbaaaacabcd4d"));
+
+
+
+     //8. 주어진 문자열의 첫번째 문자와 마지막 문자를 빼고 출력하시오.
+    //substring   ==  substr   
+    let = str = "absdfsdf";
+    function cut_fl(str){
+       
+        return str.substring(i, str.length-1);     //시작인덱스 ,마지막인덱스
+    } 
+    console.log(cut_fl)
+
+    //function cut_f2(str){
+     //   let = str = "absdfsdf";
+     //   return str.substr(1, str.length-2); // 시작인덱스  자를인덱스
+   // }
+   // console.log(cut_f2)
+
+
+
+//9.두개의 문자를 받아 각 문자의 첫번째 문자를 제거한 후 두 문자를 연결하시오.
+
+ // 예) PHP, JS ==> HPS
+
+ 
+
+//10. 문자열이 "Los", 나 "New"로 시작하면 문자를 표시하고 그렇지 않으면 공백을 반환하시오.
+
+   //  단, Los, New는 대소문자를 무시합니다. 
+    </script>
+
+</body>
+</html>

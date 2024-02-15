@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 재귀함수</title>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script>
+      
+ /* $(function(){                   <ㅡ 두개다사용가능 문서를실행 
+    안에적어야함 $(셀렉터).이벤트(function({})) ㅡ> $(document).ready(function()
+     div. #{*/
+        $(function(){ 
+         $('.box').click(function(){
+        let str = prompt("이름을 입력하세요.");
+        document.write("반갑습니다." + str + "님");
+    });
+ });  //jquery
+
+
+
+
+    </script>
+</head>
+<body>
+    <p>선택자 재귀함수</p>
+    <div class="box id="mybox">
+        박스
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       div{
+        width: 100px;
+        height: 100px;
+        background: red;
+        margin: 20px;
+        /* transition-property: transform; all, none, in
+        transition-duration: 0.5s;
+        transition-delay: 0.5s; */
+        transition: all 1s 0.4s;
+     
+       }
+       .box1{
+           /* left: calc (50% - 50px); 가운데정렬ㅇ*/
+        left: 50%;
+        top:100px;
+           transform: translateX(-50%);
+        position: absolute;
+       }
+
+       .box2:hover{
+        transform:rotateZ(30deg);
+       }
+       .box3:hover{
+        transform: skew(30deg, 20deg);
+       }
+       .box4:hover{
+        transform : scaleX(1.5);
+       }
+       .box5:hover{
+        transform: matrix(1, -0.3, 0, 1.2, 0, 0);
+       }
+       a{
+        text-decoration: none;
+       }
+    
+       .button{
+        font-size:18px;
+    padding:5px 25px;
+    box-shadow: 2px 2px 0px 0px #efefef;
+    border-radius:10px;
+    cursor:pointer;
+    background-image:linear-gradient(to bottom, #3bbeee 5%, #0183b3 100%);
+    color:#fff;
+    border:none;
+    font-weight:bold;
+    transition: all 0.3s;
+
+
+       }
+
+       .button:hover{
+        background-image: linear-gradient(to bottom, blue 5% , green);;
+       }
+
+       .button:active{
+        transform:translate(2px , 2px);
+       }
+    </style>
+
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+
+    
+    <button class="button">버튼</button>
+</body>
+
+
+</html>

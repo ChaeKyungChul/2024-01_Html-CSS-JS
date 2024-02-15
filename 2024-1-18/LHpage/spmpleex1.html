@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        border: 1px solid #333;
+        width: 200px;
+        height: 40px;
+        text-align: center;
+        line-height: 8px;
+        border-radius: 8px;
+        position: relative;
+        overflow: hidden;
+        margin: auto;
+    }
+    .box2{
+        content: "";
+        width: 300px;
+        height: 40px;
+        background: blue;
+        position: absolute;
+        transform: skew(-45deg);
+        z-index: -1;
+        top:0;
+        left:-320px;
+        transition: all 300ms;
+        
+    }
+    .box_after{
+        left:-20px;
+        transition: : all 300ms;
+
+    }
+
+    
+    .box:hover::after{
+        left:-20;
+    }
+</style>
+<script src="js/jquery.min.js"></script>
+<script>
+    $(function(){
+        $('.box').mouseenter(function(){
+            $('.box2').addClass('box_after');
+            $('.box').mouseleave(function(){
+                $('.box2').removerClass('box_after');
+            });
+
+        //    $('box2').animate({
+        //     'left':'-20px'
+        // }, 300, function(){
+        //     $('.box').css('color', '#fff');
+        // })
+        });
+    });
+</script>
+
+<body>
+    <div class="box">asdasdsad
+        <div class="box2"></div>
+    </div>
+    
+</body>
+</html>
+

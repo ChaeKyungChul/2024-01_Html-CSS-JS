@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+     <script>
+     // 1. 임의의 양의 정수 세개가 마지막 숫자가 같은지 확인하시오.
+      // 예) 10, 20, 30  ==> true  11, 10, 20 ==> false
+        function check(x, y, z){
+            if(x == y || y == z){
+            let xx = x.slice(-1);
+            let yy = y.slice(-1);
+            let zz = z.slice(-1);
+            return true;
+            }else{
+                return false;
+            }
+        }
+    
+        console.log(check('125', '101' ,'101'));
+
+       // 2. 임의의 영문자를 받아 처음 세자를 소문자로 바꾸시오.
+        // 단 문자열의 길이가 3보다 작으면 모두 대문자로 변환합니다.  
+        function fl1(str){
+            if(str.length > 3 ){
+                let front = str.toLowerCase(3);
+                return front;
+                }else {
+                    if(str.length <= 3){
+                        let front = str.toUpperCase();
+                return front ;
+                }
+        }
+     }
+     console.log(fl1('AJkja2'));
+
+    //3. 두 수의 합이 50~80범위 안에 있으면 65를 반환하고 그렇지 않으면 80을 반환하시오.
+        function num3(x, y){
+            if(x+y >= 50 || x+y <= 80){
+                return 65;
+            }else{
+                return 80;
+            }
+        };
+        console.log(num3(50,40));
+
+    //4. 임의의 문자열을 받아 문자열을 거꾸로 출력하시오.
+        function reverse1(str){         
+            if(str.length >= 0){
+                let reverse2= str.reverseString();
+                return reverse2;
+            }
+        }   
+                   
+        console.log(reverse1('abbcas'));
+       
+       // 5. 임의의 문자열을 받으면 그 단어의 첫 글자를 대문자로 바꾸어 출력하시오.
+
+       function Upper(str3){
+
+       }
+
+      
+
+        
+     </script>
+
+</body>
+</html>

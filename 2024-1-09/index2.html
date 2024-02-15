@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style>
+    .bigbox{
+        width:800px;
+        height:800px;
+        overflow:hidden;
+    }
+    .bigbox img{
+        width:100%;
+    }
+    .sbox{
+        width:800px;
+        height:160px;
+        overflow:hidden;
+    }
+    .sbox img{
+        width:160px;
+        float:left;
+    }
+    #popup{
+        width: 400px;
+        height: 300px;
+        box-shadow: 0 0 10px 0 rgb(0, 0, 0 0.3);
+        background-color:aliceblue;
+        position:fixed;
+        top: 200px;
+        left:calc(50% - 200px);
+        text-align: center;
+        z-index: 100;
+        display:none;
+    }
+</style>
+</head>
+<body>
+ <div class="bigbox">
+    <img src="img/KakaoTalk_20240109_115225205_02.jpg"01" id="bigbox" />
+ </div>
+ <div class="sbox">
+    <img src="img/KakaoTalk_20240109_115225205_02.jpg" 
+         alt="01" 
+         onclick="viewImg('KakaoTalk_20240109_115225205_02')"/>
+
+        <img src="img/KakaoTalk_20240109_115225205_04.jpg" alt="04"
+     onclick="viewImg('KakaoTalk_20240109_115225205_04')"/>
+        <img src="img/KakaoTalk_20240109_115225205_03.jpg" alt="05"
+     onclick="viewImg('KakaoTalk_20240109_115225205_03')"/>
+        <img src="img/KakaoTalk_20240109_115225205_05.jpg" alt="06"
+     onclick="viewImg('img/KakaoTalk_20240109_115225205_05.')"/>
+        <img src="img/KakaoTalk_20240109_115225205_03.jpg" alt="07"
+     onclick="viewImg('KakaoTalk_20240109_115225205_03')"/>
+ </div>
+ <button id="vpopup" onClick="viewPopup"();"> 팝업창보이기</button>
+ <div id="popup">
+    <h1> 팝업창입니다.</h1>
+    <button id="close" onClick="hidePopup()">닫기</button>
+ </div>
+ <script>
+    function viewImg(str) {
+        document.getElementById('bigbox').src='images/'+str+'.jpg';
+    }
+
+    function viewPopup(){
+        document.getElementById("popup").style.display="block";
+
+    }
+
+    function hidePopup(){
+        document.getElementById("popup").style.display="none";
+    }
+ </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sns</title>
+    <style>
+        .container{
+            width:500px;
+            height:100px;
+            border:1px solid #333;
+            /* block을 가운데 정렬 시키는 법*/
+            margin-left:auto;
+            margin-right:auto;
+            text-align:center; /*글씨정렬*/
+            padding:40px 20px;
+        }
+        .container span{
+            display:inline-block;
+            width:62px;
+            height:62px;
+            margin:20px 10px;
+            border:1px solid #333;
+            border-radius:50%;
+        }
+        .facebook{
+            background:url(css/imgs/icons.png) no-repeat;
+        }
+        .kakao{
+            background:url(css/imgs/icons.png) no-repeat -327px -72px;
+        }
+        .insta{
+            background:url(css/imgs/icons.png) no-repeat -82px -0px;
+        }
+        .twitter{
+            background:url(css/imgs/icons.png) no-repeat -327px -0px;
+        }
+        .youtube{
+            background:url(css/imgs/icons.png) no-repeat -163px -216px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="facebook"></span>
+        <span class="kakao"></span>
+        <span class="insta"></span>
+        <span class="twitter"></span>
+        <span class="youtube"></span>
+
+<!--
+        inline box는 
+    안에있는 내용 크기만큼만 적용되는 박스여서
+    width, height 값을 줄 수 없으며
+    높이를 알수 없기 때문에
+    margin-top, margin-bottom도 줄 수 없다.
+-->
+</body>
+</html>

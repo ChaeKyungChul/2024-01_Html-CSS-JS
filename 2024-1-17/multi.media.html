@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media print {
+            .design{
+                display: none;
+            }
+            .multi-column h1{
+                display: none;
+            }
+
+        }
+        .multi-column{
+            width: 600px;
+            column-count:3;
+            column-gap:50px;
+            /* column-rule-style:dashed;
+            column-rule-width: 4px;
+            column-rule-color: blueviolet; */
+            column-rule: 5px dashed #ddd;
+        }
+        .multi-column h1{
+            column-span:all;
+        }
+        .design{
+            height: 50px;
+            width: 100%;;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <h1> 다단 표현</h1>
+    <div class="design">각급 선거관리위원회는 선거인명부의 작성등 선거</div>
+    <div class="design">각급 선거관리위원회는 선거인명부의 작성등 선거</div>
+    
+    <div class="multi-column">
+        <p>각급 선거관리위원회는 선거인명부의 작성등 선거사무와 국민투표사무에 관하여 관계 행정기관에 필요한 지시를 할 수 있다. 법원은 최고법원인 대법원과 각급법원으로 조직된다. 제2항의 재판관중 3인은 국회에서 선출하는 자를, 3인은 대법원장이 지명하는 자를 임명한다. 모든 국민은 행위시의 법률에 의하여 범죄를 구성하지 아니하는 행위로 소추되지 아니하며, 동일한 범죄에 대하여 거듭 처벌받지 아니한다. 사회적 특수계급의 제도는 인정되지 아니하며, 어떠한 형태로도 이를 창설할 수 없다. 환경권의 내용과 행사에 관하여는 법률로 정한다. 군사법원의 조직·권한 및 재판관의 자격은 법률로 정한다.</p>
+        <h1> 각급 선거관리위원회는 선거인명부의 작성등 선거사무와 국민투표사무에 관하여 관계 행정기관에 필요한 지시를 할 수 있다.</h1>
+        <p>선거운동은 각급 선거관리위원회의 관리하에 법률이 정하는 범위안에서 하되, 균등한 기회가 보장되어야 한다. 국회는 국정을 감사하거나 특정한 국정사안에 대하여 조사할 수 있으며, 이에 필요한 서류의 제출 또는 증인의 출석과 증언이나 의견의 진술을 요구할 수 있다. 신체장애자 및 질병·노령 기타의 사유로 생활능력이 없는 국민은 법률이 정하는 바에 의하여 국가의 보호를 받는다. 대통령은 국가의 안위에 관계되는 중대한 교전상태에 있어서 국가를 보위하기 위하여 긴급한 조치가 필요하고 국회의 집회가 불가능한 때에 한하여 법률의 효력을 가지는 명령을 발할 수 있다. 국회는 법률에 저촉되지 아니하는 범위안에서 의사와 내부규율에 관한 규칙을 제정할 수 있다.</p>
+
+    </div>
+    <div class="design">각급 선거관리위원회는 선거인명부의 작성등 선거</div>
+    <div class="design">각급 선거관리위원회는 선거인명부의 작성등 선거</div>
+
+</body>
+</html>

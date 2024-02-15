@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 150px;
+            border: 1px solid black;
+            /* background: url;    no-repeat center top;
+            background-size: contain;   컨테인.가로세로 일정  , 100% , cover박스꼬ㅠㅏㄱ차게*/
+            overflow: hidden;
+        } 
+        .box img{
+            width: 300px;
+            height: 150px;
+            object-fit: cover;
+            object-position: top center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <img src="imgs/001.gif" alt ="이미지">
+        </div>
+</body>
+
+</html>

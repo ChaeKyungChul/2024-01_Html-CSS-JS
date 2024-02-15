@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현재 날짜와 시간</title>
+    <style>
+         .box{
+        text-align:center;
+    }
+    </style>
+</head>
+<body>
+    
+ 
+    }
+    <div class="box">
+        <p>
+           오늘은 <span id="year"></span> 년 
+            <span id="month"></span> 월
+            <span id="day"></span> 일
+            <span id="week"></span> 요일    입니다.    
+        </p>
+      
+       
+        <p id="hours">  </p> 
+        
+    </p>
+    <p id="minutes"></p>
+            <script>
+                const today = new Date();
+   document.getElementById("year").innerHTML = today.getFullYear();
+        document.getElementById("month").innerHTML = today.getMonth()+1;
+        document.getElementById("day").innerHTML = today.getDate();
+        document.getElementById("week").innerHTML = getWeek(today.getDay());
+        function getWeek(wk){
+           let w; 
+           switch(wk){
+             case 0: w = "일"; break;
+             case 1: w = "월"; break;
+             case 2: w = "화"; break;
+             case 3: w = "수"; break;
+             case 4: w = "목"; break;
+             case 5: w = "금"; break;
+             case 6: w = "토"; break;
+           } 
+           return w;
+           
+        }
+ const hours = new Date();
+document.getElementById("hours").innerHTML = d.getHours();
+const minutes= new Date();
+document.getElementById("minutes").innerHTML = d.getMinutes();
+    
+            </script>
+        
+</body>
+</html>

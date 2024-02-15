@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            padding: 30px;
+            
+            clear: #fff;
+            border: #fff;
+            background: blue;
+        }
+    </style>
+    <script src="jquery/jquery1-18.js"></script>
+
+    <script>
+        //$(function(){})
+     $(document).ready(function(){
+        $('.hide').click(function(){
+            $('.box').slideUp(1000);          //fadeOut, slideup
+        });
+        // $('.show').click(function(){
+        //     $('.box').slideDown(2000, function(){     //fadeIn
+        //     alert("슬라이드가 끝났습니다.");
+        // });
+        // $('.toggle').click(function(){
+        //     $('.box').slideToggle();  //fadeToggle
+        // });
+    });
+</script>
+
+</head>
+<body>
+   
+
+
+    
+     <button class="hide">사라져라</button>
+     <button class="toggle">나와라</button>
+     <button class="show">자동</button>
+     <div class="box">안녕하세요.</div>          //실패함 다시 
+
+
+
+</body>
+</html>

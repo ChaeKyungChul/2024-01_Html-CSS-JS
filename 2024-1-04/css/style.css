@@ -1,0 +1,55 @@
+/* 색을쓰는방법
+rgb ==> 빛의 3요소 r+g+b ==> 흰색  24비트
+cmy ==> 색의 3요소 c+m+y ==> 검정
+
+rgb 00000000 ==> 0 0 0 => 검정
+    11111111 ==> 255  255 255 ==> 흰색 rgb(255,255,255)
+
+16진수 (abcdef)
+00 00 00 ==> 검정 #000000 #000
+ff ff ff ==> 흰색 #ffffff #fff
+
+색의 3원색 ==> 색상, 채도, 명도 
+  //hsl(20,100%,30%);
+
+black, pink, red, blue */
+
+.box{
+    color:#1a0202;
+    width:40px;
+    height:40px;
+    
+}
+.box2{
+    background-color:rgb(100, 30, 1, 0.4);
+    width:300px;
+}
+span{
+    background-color :red;
+    width:150px;
+}
+#box2{
+    background-color:yellow;
+    width:400px;
+    height:300px;
+    border-width: 4px;
+    border-style: solid;
+    border-top-width:6px;
+    border-top-color:green;
+    border-right-color:aqua;
+    border-bottom-color:azure;
+    border-left-color:blue;
+
+    border:4px solid black;   /*/축약버전*/
+    border-radius:10px;  /*둥글게 */
+    border-top-left-radius:40px;
+    border-bottom-right-radius:100px;
+    border-radius : 40px 50px 100px 30x;
+
+
+}
+.kor{
+    background-color: aqua;
+    border-bottom:1px dashed black;
+}
+

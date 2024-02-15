@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #test,#test2{
+            font-size: 40px;
+            font-weight: 40px;
+        }
+
+        .div{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+        
+        .box1{background-color: red;}
+        .box2{background-color: blue}
+        .box3{background-color: aquamarine;}
+    </style>
+    <script src="../jquery2/jquery.min.js"></script>
+    <script>
+            $(document).ready(function(){
+              $('.btn').click(function(){
+                $('#image').attr('src', 'image/눈사람2.jpg');
+            });
+            $('.btn2').click(function(){
+                alert($('#naver').attr('href'));
+            })
+        });
+          
+        
+    </script>
+</head>
+<body>
+
+    <img id="image" src="image/눈사람.jpg" alt="snow">
+    <button onclick="myBtn()">이미지변경</button>
+     <button class="btn2">jquery 이미지변경</button>
+
+     <a href="http://naver.com" id="naver">네이버</a>
+     <button class="btn2">네이버주소 뺴기</button>
+    
+
+     <script>
+        function myBtn(){
+            document.getElementById("image").src="image/눈사람2.jpg";
+            alert("이미지를 002로 변경해 주세요.");
+        }
+     
+   
+     </script>
+    
+</body>
+
+</html>

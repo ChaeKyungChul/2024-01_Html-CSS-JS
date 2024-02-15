@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ol{
+        width: 150px;
+    }
+    li:hover{
+        background-color: yellowgreen;
+    }
+    .f{
+        background-color: greenyellow;
+    }
+    li:first-child,
+    li:last-child{               
+        background-color:#dddd;
+    }
+li:last-of-type{
+    background-color: antiquewhite;
+}
+
+    /* li:nth-child(2n-1){
+        background: #dddf;
+    } */
+    
+    /**
+    
+    :nth-child(순서)
+    순서에 odd, even 으로 홀짝을 쓸수 있음
+    또 2n, 2n-1 로 써도됨
+    */
+</style>
+<body>
+    
+    <ol>
+        <li class="f">1번쨰</li>
+        <li>2번쨰</li>
+        <li>3번쨰</li>
+        <li>4번쨰</li>
+        <li>5번쨰</li>
+
+    </ol>
+</body>
+</html>

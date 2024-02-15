@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+ <script>
+
+ const uName = prompt("당신의 이름은?", "");
+ const uHeight = prompt("당신의 키는?");
+ const uWeight = prompt("당신의몸무게는?");
+
+ //평균 체중
+ const normalweight = (uHeight - 100)*0.9;
+ let result = uWeight >= normalweight -5 && uWeight <= normalweight +5;    //오차범위 +-5
+ result = result ? "적정 체중입니다." : "적정체중이 아닙니다.";
+ document.write(uName + "님은" + result);
+ 
+ 
+</script>
+</body>
+</html>

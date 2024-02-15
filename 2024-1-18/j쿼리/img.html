@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;};
+  
+.container{
+    border: 1px solid black;
+
+}
+.box1 {
+  position: relative;
+} 
+
+.box2 {
+  position: absolute;
+  top: 120px;
+  left: 110px;
+  display: none;
+  
+  
+}
+.box2:hover{
+    background-color: aliceblue;
+    
+}
+</style>
+            
+
+<script src="jquery/jquery1-18.js"></script>
+
+<script>
+ $(document).ready(function(){
+  $(".show1").click(function(){
+    $(".box2").slideDown("slow");
+  });
+  $(".show1").click(function(){
+    $(".box2").slideUp("hide");
+  });
+});
+
+
+// $(document).ready(function(){
+//   $("#flip").click(function(){
+//     $("#panel").slideToggle("slow");
+//   });
+</script>
+    
+</head>
+<body>
+
+    
+        <div class="container">
+        <div class="box1">
+            <img src="img/KakaoTalk_20240118_163930669_01.png" alt="메롱"></div>
+            
+        <div class="box2">
+            <img src ="img/KakaoTalk_20240118_163930669.png" alt="메롱2"></div>
+            <div><button class="show1">나와</button></div>
+            <div><button class="hide1">숨기</button></div>
+
+        
+   
+    </div>
+
+   
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            padding:10px;
+            background-color: dodgerblue;
+            display:flex;
+            /* flex-direction: row;
+            flex-wrap: wrap; 
+            flex-flow: row wrap; */
+            /* justify-content: space-around; */
+            /* align-items: center; */
+            /* align-content: space-between; */
+            height:400px;
+
+        }
+        .parent > div{
+            background-color: #f1f1f1;
+            width:100px;
+            margin:10px;
+            text-align: center;
+            font-size:40px;
+            line-height:100px;
+            /* height:100px; */
+        }
+         /* @media screen and (max-width: 700px){
+            .parent{
+                flex-direction:column;
+            } */
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div style="order:3; flex-shrink: 0;">1</div>
+        <div style="order:4; ">2</div>
+        <div style="order:5; flex-shrink: 2;    
+                align-self:center;">3</div>
+        <div style="order:1; ">4</div>
+        <div style="order:2; ">5</div>
+    </div>
+</body>
+</html>

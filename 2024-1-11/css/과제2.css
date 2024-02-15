@@ -1,0 +1,43 @@
+*{box-sizing: border-box;}
+main, header, footer{
+    width: 1200px;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+header{
+    width: 1200px;
+    height: 100px;
+    background: brown;
+    margin: auto;
+}
+.banner{
+    width: 1200px;
+    height:300px;
+    
+    background:url(../imgs/coding2.jpg);
+    background-color: antiquewhite;
+}
+.section1{
+    width: 400px;
+    height: 200px;
+    background-color: blue;
+    float: left;
+}
+.section2{
+    width: 400px;
+    height: 200px;
+    background-color:greenyellow;
+    float: left;
+}
+.section3{
+    width: 400px;
+    height: 200px;
+    background-color: goldenrod;
+    float: left;
+}
+.footer{
+    width: 1200px;
+    height: 100px;
+    background-color: cadetblue;
+}
